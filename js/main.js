@@ -2,7 +2,38 @@ document.addEventListener('DOMContentLoaded', () => {
     // Menu toggle
     const toggle = document.getElementById('menu-toggle');
     const nav = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => nav.classList.toggle('show'));
+    const overlay = document.getElementById('nav-overlay');
+    
+    // Toggle menu on hamburger click
+    toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        nav.classList.toggle('show');
+        if (overlay) overlay.classList.toggle('show');
+    });
+    
+    // Close menu when clicking overlay
+    if (overlay) {
+        overlay.addEventListener('click', () => {
+            nav.classList.remove('show');
+            overlay.classList.remove('show');
+        });
+    }
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+            nav.classList.remove('show');
+            if (overlay) overlay.classList.remove('show');
+        }
+    });
+    
+    // Close menu when clicking on nav links
+    nav.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {
+            nav.classList.remove('show');
+            if (overlay) overlay.classList.remove('show');
+        }
+    });
   
     // Dark Mode
     const darkToggle = document.getElementById('darkModeToggle');
