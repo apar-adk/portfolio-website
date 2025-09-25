@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://adhikariapar.com.np/sitemap.xml
+
+# Block common bot files
+Disallow: /assets/
+Disallow: /.git/
+Disallow: /css/
+Disallow: /js/

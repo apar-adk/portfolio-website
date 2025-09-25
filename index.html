@@ -4,26 +4,139 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apar Adhikari | Food Technologist</title>
+    <title>Apar Adhikari | Food Technologist & Portfolio</title>
     <meta name="description"
-        content="Portfolio of Apar Adhikari, Food Technology graduate from Tribhuwan University, Dharan. Explore projects, education, and get in touch.">
+        content="Welcome to Apar Adhikari's portfolio. Food Technology graduate from Tribhuvan University, Dharan. Expertise in food science, quality control, and technology innovation in Nepal.">
     <meta name="keywords"
-        content="Apar Adhikari, Food Tech, Food Technology Nepal, Tribhuwan University, Central Campus of Technology, Dharan, Portfolio">
+        content="Apar Adhikari, Food Technologist Nepal, Food Technology TU, Tribhuvan University Dharan, Food Science Nepal, Portfolio, Food Quality Control">
     <meta name="author" content="Apar Adhikari">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://adhikariapar.com.np/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adhikariapar.com.np/">
+    <meta property="og:title" content="Apar Adhikari | Food Technologist & Portfolio">
+    <meta property="og:description" content="Welcome to Apar Adhikari's portfolio. Food Technology graduate from Tribhuvan University, Dharan. Expertise in food science, quality control, and technology innovation in Nepal.">
+    <meta property="og:image" content="https://adhikariapar.com.np/assets/images/apar.jpg">
+    <meta property="og:site_name" content="Apar Adhikari Portfolio">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://adhikariapar.com.np/">
+    <meta property="twitter:title" content="Apar Adhikari | Food Technologist & Portfolio">
+    <meta property="twitter:description" content="Welcome to Apar Adhikari's portfolio. Food Technology graduate from Tribhuvan University, Dharan.">
+    <meta property="twitter:image" content="https://adhikariapar.com.np/assets/images/apar.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Apar Adhikari",
+      "jobTitle": "Food Technologist",
+      "alumniOf": "Tribhuvan University, Dharan",
+      "url": "https://adhikariapar.com.np",
+      "image": "https://adhikariapar.com.np/assets/images/apar.jpg",
+      "sameAs": [
+        "https://adhikariapar.com.np"
+      ]
+    }
+    </script>
+    
+    <!-- Website Structure for Sitelinks -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Apar Adhikari Portfolio",
+      "url": "https://adhikariapar.com.np",
+      "description": "Portfolio website of Apar Adhikari, Food Technologist from Nepal",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://adhikariapar.com.np/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "SiteNavigationElement",
+            "position": 1,
+            "name": "About",
+            "description": "Learn about Apar Adhikari's background and expertise",
+            "url": "https://adhikariapar.com.np/about.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 2,
+            "name": "Education",
+            "description": "Explore Apar Adhikari's educational qualifications",
+            "url": "https://adhikariapar.com.np/education.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 3,
+            "name": "Experience",
+            "description": "Discover Apar Adhikari's professional experience",
+            "url": "https://adhikariapar.com.np/experience.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 4,
+            "name": "Contact",
+            "description": "Get in touch with Apar Adhikari",
+            "url": "https://adhikariapar.com.np/contact.html"
+          }
+        ]
+      }
+    }
+    </script>
+    
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Inside <head> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
+    
+    <!-- Prevent Dark Mode Flash -->
+    <script>
+    (function() {
+        const isDark = localStorage.getItem('darkMode') !== 'false';
+        if (isDark) {
+            document.documentElement.classList.add('dark-mode');
+            document.body.classList.add('dark-mode');
+        }
+    })();
+    </script>
+    
     <script defer src="js/main.js"></script>
 </head>
 
-<body>
+<body class="loading">
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loader-container">
+            <div class="loader-logo">
+                <div class="loader-circle"></div>
+                <div class="loader-text">
+                    <h1>Apar Adhikari</h1>
+                    <p>Food Technologist</p>
+                </div>
+            </div>
+            <div class="loader-animation">
+                <div class="loader-bar"></div>
+                <div class="loader-percentage">0%</div>
+            </div>
+            <div class="loader-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
     <!-- Mobile menu overlay -->
     <div class="nav-overlay" id="nav-overlay"></div>
-
-    <button id="darkModeToggle" title="Toggle Dark Mode">
-        <i class="fas fa-moon"></i>
-    </button>
 
     <header>
         <nav class="navbar">
@@ -32,7 +145,6 @@
                 <span class="logo-name">Apar Adhikari</span>
               </div>
               
-            <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
@@ -40,6 +152,13 @@
                 <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
                 <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
+            
+            <div class="navbar-controls">
+                <button id="darkModeToggle" class="dark-mode-btn" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+            </div>
         </nav>
     </header>
     <main class="main-full">
@@ -54,7 +173,7 @@
 
     <footer class="footer" id="homefooter">
         <p>&copy; <span id="year"></span> Apar Adhikari. All rights reserved.</p>
-        <p>Developed by: <strong><a href="https://adhikari-aashish.com.np" target="_blank">Aashish Adhikari</strong></b></p>
+        <p>Designed with ❤️ by: <strong><a href="https://adhikari-aashish.com.np" target="_blank">Aashish Adhikari</a></strong></p>
     </footer>
 </body>
 

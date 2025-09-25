@@ -4,15 +4,65 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apar Adhikari | Education</title>
+    <title>Education & Qualifications | Apar Adhikari</title>
     <meta name="description"
-        content="Portfolio of Apar Adhikari, Food Technology graduate from Tribhuwan University, Dharan. Explore projects, education, and get in touch.">
+        content="Explore Apar Adhikari's educational background including Bachelor's in Food Technology from Tribhuvan University, Central Campus of Technology, Dharan, Nepal.">
     <meta name="keywords"
-        content="Apar Adhikari, Food Tech, Food Technology Nepal, Tribhuwan University, Central Campus of Technology, Dharan, Portfolio">
+        content="Apar Adhikari Education, Food Technology Degree Nepal, Tribhuvan University Dharan, Central Campus Technology, Academic Qualifications">
     <meta name="author" content="Apar Adhikari">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://adhikariapar.com.np/education.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://adhikariapar.com.np/education.html">
+    <meta property="og:title" content="Education & Qualifications | Apar Adhikari">
+    <meta property="og:description" content="Explore Apar Adhikari's educational background including Bachelor's in Food Technology from Tribhuvan University.">
+    <meta property="og:image" content="https://adhikariapar.com.np/assets/images/apar.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://adhikariapar.com.np/education.html">
+    <meta property="twitter:title" content="Education & Qualifications | Apar Adhikari">
+    <meta property="twitter:description" content="Explore Apar Adhikari's educational background in Food Technology.">
+    <meta property="twitter:image" content="https://adhikariapar.com.np/assets/images/apar.jpg">
+    
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://adhikariapar.com.np/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Education",
+          "item": "https://adhikariapar.com.np/education.html"
+        }
+      ]
+    }
+    </script>
+    
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <!-- Prevent Dark Mode Flash -->
+    <script>
+    (function() {
+        const isDark = localStorage.getItem('darkMode') !== 'false';
+        if (isDark) {
+            document.documentElement.classList.add('dark-mode');
+            document.body.classList.add('dark-mode');
+        }
+    })();
+    </script>
 </head>
 
 <body>
@@ -24,7 +74,6 @@
                 <span class="logo-name">Apar Adhikari</span>
               </div>
               
-            <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
@@ -32,43 +81,71 @@
                 <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
                 <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
+            
+            <div class="navbar-controls">
+                <button id="darkModeToggle" class="dark-mode-btn" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+            </div>
         </nav>
     </header>
 
     <section class="section education">
-        <h2>Education</h2>
+        <h2><i class="fas fa-graduation-cap"></i> Education Journey</h2>
 
-        <div class="edu-block">
-            <h3>Bachelor's degree in Food Technology</h3><br>
-            <p><strong>Institution:</strong> Central Campus of Technology, Dharan<br> Tribhuvan University, Nepal</p>
-            <p><strong>Passout Year:</strong> 2023</p>
+        <div class="education-timeline">
+            <div class="edu-block">
+                <h3>
+                    Master's degree in Food Science
+                </h3>
+                <p><strong><i class="fas fa-building"></i> Institution:</strong> London Metropolitan University, UK</p>
+                <p><strong><i class="fas fa-calendar-alt"></i> Enrolled:</strong> September 2025</p>
+                <span class="edu-status current">Currently Studying</span>
+            </div>
+
+            <div class="edu-block">
+                <h3>
+                    Bachelor's degree in Food Technology
+                </h3>
+                <p><strong><i class="fas fa-building"></i> Institution:</strong> Central Campus of Technology, Dharan<br> Tribhuvan University (TU affiliated), Nepal</p>
+                <p><strong><i class="fas fa-calendar-check"></i> Completed:</strong> 2023</p>
+                <span class="edu-status completed">Graduated</span>
+            </div>
         </div>
 
-        <h2>Area of expertise</h2>
-        <div class="edu-block">
-            <li><strong>Food Fermentations</strong></li>
-            <li><strong>Food Safety and Quality Control</strong></li>
-            <li><strong>Food Packaging</strong></li>
-            <li><strong>Food Microbiology</strong></li>
+        <h2><i class="fas fa-lightbulb"></i> Area of Expertise</h2>
+        <div class="expertise-grid">
+            <div class="expertise-item">
+                <strong>Food Fermentations</strong>
+            </div>
+            <div class="expertise-item">
+                <strong>Food Safety and Quality Control</strong>
+            </div>
+            <div class="expertise-item">
+                <strong>Food Packaging</strong>
+            </div>
+            <div class="expertise-item">
+                <strong>Food Microbiology</strong>
+            </div>
         </div>
 
-        <h2>Recent Research</h2>
-        <div class="edu-block">
-            <li><strong>Bioactive and Antinutritional Components of Soybean Seeds</strong></li>
-            <a target="_blank" id="thesis" href="http://202.45.146.37:8080/jspui/handle/123456789/315">Click here</a>
-            <span>for the link.</span>
+        <h2><i class="fas fa-search"></i> Recent Research</h2>
+        <div class="research-highlight">
+            <h3>Bioactive and Antinutritional Components of Soybean Seeds</h3>
+            <p>Comprehensive research study on the bioactive compounds and antinutritional factors present in soybean seeds, contributing to food science knowledge and understanding of nutritional components.</p>
+            <a class="research-link" target="_blank" href="http://202.45.146.37:8080/jspui/handle/123456789/315">
+                <i class="fas fa-external-link-alt"></i>
+                View Research Paper
+            </a>
         </div>
-
     </section>
 
     <footer class="footer">
         <p>&copy; <span id="year"></span> Apar Adhikari. All rights reserved.</p>
-        <p>Developed by: <strong><a href="https://adhikari-aashish.com.np" target="_blank">Aashish Adhikari</a></strong></p>
+        <p>Designed with ❤️ by: <strong><a href="https://adhikari-aashish.com.np" target="_blank">Aashish Adhikari</a></strong></p>
     </footer>
 
-    <button id="darkModeToggle" title="Toggle Dark Mode">
-        <i class="fas fa-moon"></i>
-    </button>
 </body>
 
 </html>
